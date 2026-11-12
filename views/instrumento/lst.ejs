@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="/estilo.css">
+<h2>Lista de Instrumentos</h2>
+<a href="/instrumento/add">Cadastrar novo instrumento</a>
+<ul>
+<% instrumentos.forEach(i => { %>
+  <li><%= i.nome %> - <%= i.fabricante %> - R$ <%= i.preco %> - <%= i.tipo %></li>
+<% }) %>
+</ul>
